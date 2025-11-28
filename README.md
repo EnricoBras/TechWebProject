@@ -5,8 +5,7 @@ JobAdvisor -- Web Technologies University Project University of Naples "Partheno
 
 University of Naples "Parthenope" 
 
-Student: Enrico Brasiello 
-ID: 0124002755
+Student: Enrico Brasiello  StudentID: 0124002755
 Exam: Web Technologies aa 2024/2025
 
 
@@ -56,7 +55,7 @@ Company: create or delete Job placement, Employee verification, company profile
 
 1) Open any database manager between HeidiSQL or others
 2) create a new database named 'jobreview'
-3) import the dump sql file 'dump_database' provided in the 'Database' folder (ensure triggers and verifications are active)
+3) import the dump sql file 'dump_database' provided in the 'Dump Database' folder (ensure triggers and verifications are active)
 4) Open a terminal in the project root folder
 5) install dependencies  '''bash npm install
 6) open BackEnd/database.js
