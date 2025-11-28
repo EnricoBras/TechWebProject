@@ -1,0 +1,43 @@
+<!-- /* Studente: Enrico Brasiello
+Matricola: 0124002755
+Componenti gruppo: 1
+Nome progetto: JobAdvisor
+* Esame: Tecnologie Web a.a 2024/2025
+* Data appello: 02/12/2025
+* */
+-->
+
+
+<!-- Pagina di login del sito-->
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login - JobAdvisor</title>
+    <link rel="stylesheet" href="loginstyle.css">
+</head>
+<body>
+
+<div class ="login-container">
+    <div class = "containerLogo">
+        <img src="img/JobAdvisor.png" alt="jobadvisor logo" class="my-logo">
+    </div>
+    <h2> Welcome back! Please insert your data.</h2>
+    <form id="login-form">
+        <input type = "email" id ="login-email" placeholder = "Enter your email address" required>
+        <input type = "password" id ="login-password" placeholder = "Enter your password" required>
+        <button type = "Submit"> Submit</button>
+    </form>
+
+<div class = "containerGuess">
+    <h3> Not registered yet? Join us! </h3>
+    <a href="register.html" class="register-button"> Register</a>
+    <a> Or</a>
+    <a href="homepage.html" onclick= "history.back()" class="back-link"> Return to home</a>
+</div>
+
+</div>
+<script src ="login.js"> </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!-- /* Studente: Enrico Brasiello
+Matricola: 0124002755
+Componenti gruppo: 1
+Nome progetto: JobAdvisor
+* Esame: Tecnologie Web a.a 2024/2025
+* Data appello: 02/12/2025
+* */
+-->
+
+<!-- Pagina dedicata all'aggiunta di lavori da parte dell'azienda -->
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "registerstyle.css">
+    <title> Create a Job Advise to JobAdvisor</title>
+</head>
+
+<body>
+
+<div class = "registercard">
+    <div class = "containerLogo">
+        <img src="img/JobAdvisor.png" alt="jobadvisor logo" class="my-logo">
+    </div>
+    <h1 style = "color: #800808; padding-bottom: 15px "> Create a Job Advice </h1>
+    <form id = "register-form">
+        <p> Please, insert your job data.</p>
+        <div>
+            <label for = "job-position" > </label>
+            <input type = "text" id ="job-position" placeholder = "Position name" required>
+        </div>
+
+        <div>
+            <label for = "job-benefit"> </label>
+            <input type = "text" id = "job-benefit" placeholder="Benefits" required>
+
+        </div>
+        <div>
+            <label for="job-salary"></label>
+            <input type = "number" id = "job-salary" placeholder="Salary - Year" required>
+        </div>
+        <div>
+            <label for = "job-skills"></label>
+            <input type = "text" id ="job-skills" placeholder="Required Skills" required>
+        </div>
+
+
+        <button type = "submit">Register</button>
+    </form>
+
+    <h4>Have you changed your mind?</h4>
+    <a href="homepage.html" onclick= "history.back()" class="back-link"> Return to home</a>
+</div>
+<script src = "addJobs.js"> </script>
+</body>
+</html>

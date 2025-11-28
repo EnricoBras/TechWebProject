@@ -1,0 +1,69 @@
+<!-- /* Studente: Enrico Brasiello
+Matricola: 0124002755
+Componenti gruppo: 1
+Nome progetto: JobAdvisor
+* Esame: Tecnologie Web a.a 2024/2025
+* Data appello: 02/12/2025
+* */
+-->
+
+<!--Foglio HTML per la creazione delle recensioni da parte degli utenti-->
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register/registerstyle.css">
+    <title>Write a Review - JobAdvisor</title>
+</head>
+<body>
+
+<div class="registercard">
+    <div class = "containerLogo">
+        <img src="img/JobAdvisor.png" alt="jobadvisor logo" class="logo">
+</div>
+    <h1 class="subtitle">Write a Review<span class="tool-name"></span></h1>
+
+    <form id="review-form">
+    <p>Share with us your work experience</p>
+        <div>
+            <label for="Review-company-selection"></label>
+            <select id="Review-company-selection" required style="width: 100%; padding: 10px; margin: 10px 0;">
+                <option value="" disabled selected>Select Company</option>
+
+
+            </select>
+        </div>
+        <div>
+            <label for = "Review-title" > </label>
+            <input type = "text" id ="Review-title" placeholder = "Title" required>
+        </div>
+        <div>
+            <label for="Review-rating"></label>
+            <select id="Review-rating" required style="width: 100%; padding: 10px; margin: 10px 0;">
+                <option value="" disabled selected>Rate your experience</option>
+                <option value="5">⭐⭐⭐⭐⭐ (Excellent)</option>
+                <option value="4">⭐⭐⭐⭐ (Good)</option>
+                <option value="3">⭐⭐⭐ (Average)</option>
+                <option value="2">⭐⭐ (Poor)</option>
+                <option value="1">⭐ (Terrible)</option>
+            </select>
+        </div>
+
+        <div>
+            <label for = "Review-context"> </label>
+            <input type = "text" id = "Review-context" placeholder="Description" required>
+        </div>
+<p id="error-message" style="display: none; color: red; font-weight: bold; text-align: center; margin-bottom: 10px;"></p>
+<button type="submit"> Submit Review</button>
+    </form>
+
+    <h4>Changed your mind?</h4>
+    <a href="homepage/homepage.html" class="back-link">Return to home</a>
+
+</div>
+<script src="add_review.js">
+</script>
+</body>
+</html>

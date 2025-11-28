@@ -1,0 +1,101 @@
+body{
+    background-color: #09a1f1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    display: flex; /* attivo la modalità flessibile che mi permette di organizzare meglio la pagina */
+    justify-content: center;  /* centro la pagina orizzontalmente */
+    align-items: center; /* centro adesso verticalmente */
+    height: auto; /* modifico l'altezza dello schermo al 100%*/
+}
+
+
+.registercard{
+    background-color: #92a5ca; /* scelgo di utilizzare un colore diverso dal background, ma che sia leggermente correlato */
+    padding: 16px; /* lo spazio interno tra il bordo e il testo suo */
+    border-radius: 10px; /* arrotondo gli angoli con questo comando*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* comando per aggiungere un ombra sfumata */
+width: 650px;
+}
+
+.input-group{
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+label{
+    display: block; /* mette l'etichetta sopra l'input*/
+    margin-bottom: 25px; /* lo spazi o attraverso */
+    color: #3c4040;
+font-weight: bold;
+}
+
+
+input{
+    width: 100%; /* occupa tutto lo spazio disponibile*/
+    padding: 8px; /* rende la casella più alta e comoda */
+    border: none; /* rimuovo i border */
+    box-sizing: border-box; /* evita che il riquadro di input vada fuori al box di creazione account*/
+    transition: 0.3s;
+    outline: none;
+    border-radius: 10px;
+}
+
+
+input:focus{
+    outline: none;
+    border-color: #1c3a5a;
+}
+
+
+button{
+    width: 100%;
+    padding: 12px;
+   cursor: pointer; /* consente di cambiare il cursore del mouse in una mano */
+    font-size: 16px;
+    margin-top: 50px;
+}
+
+.back-link{
+width: 100px;
+    display: block; /* mette il link su una nuova riga*/
+    margin-top: 70px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.containerLogo{
+    background-color: #dbdfe6;
+    margin-top: 20px;
+    width: 650px;
+
+    margin: 0 auto 20px auto;
+
+    display: flex;
+    justify-content: center; /* centriamo l'immagine dentro il riquadro */
+    align-items: center;
+    border: 2px solid #8fb6df;
+
+
+    border-radius: 10px;
+
+}
+
+.my-logo{
+    margin-top: 50px;
+    max-width: 50%;
+    height: auto;
+    display:block;
+}
+
+h1{
+    text-align: center;
+    color: #3c4040;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: "Calibri Light", cursive;
+}
+
+.nascitaform{
+    display: flex;
+    margin-top: 40px;
+}

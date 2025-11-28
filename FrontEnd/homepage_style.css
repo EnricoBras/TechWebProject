@@ -1,0 +1,299 @@
+/* Reset e impostazioni base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #09a1f1; /* Sfondo grigio chiaro esterno alla card */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contenitore principale */
+.main-container {
+    background-color: #ffffff;
+
+    /* Larghezza fissa centrale (puoi aumentare o diminuire) */
+    width: 95%;
+    max-width: 1200px; /* Limite per evitare che diventi troppo largo su schermi enormi */
+
+    /* Altezza minima per la pagina */
+    min-height: 100vh;
+
+    /* centra il contenitore nella pagina */
+    margin: 0 auto;
+
+    /* Bordo sottile e discreto */
+    border: 1px solid #e0e0e0;
+
+    /* Rimuove l'ombra  */
+    box-shadow: none;
+
+    /* gli Angoli */
+    border-radius: 4px;
+
+    padding: 40px 60px;
+}
+.my-logo {
+    height: 100px;
+    width: auto;
+    margin-right: 5px;
+}
+
+/* --- Navbar --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1e293b;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo i {
+    color: #254E70; /* Blu scuro del logo */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1e293b;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.btn-login {
+    background-color: #2e5077; /* Colore blu bottone */
+    color: white;
+    padding: 10px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #1c3a5a;
+}
+
+
+.hero {
+    margin-bottom: 60px;
+    text-align: left;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #1e293b;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.subtitle {
+    color: #64748b;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Barra di ricerca */
+.search-bar {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden; /* Per tagliare gli angoli interni */
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 16px 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #334155;
+}
+
+.search-bar button {
+    background-color: #2e5077;
+    color: white;
+    border: none;
+    padding: 0 40px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 0 50px 50px 0;
+}
+
+.search-bar button:hover {
+    background-color: #1c3a5a;
+}
+
+/*Sezione esplora */
+.explore h2 {
+    font-size: 28px;
+    color: #1e293b;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.feature-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-box {
+    background-color: #2e5077;
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.icon-box i {
+    color: white;
+    font-size: 24px;
+}
+
+/*alcuni aggiusti del background*/
+.feature-item .icon-box {
+    background-color: transparent;
+    width: auto;
+    height: auto;
+}
+
+.feature-item .icon-box i {
+    color: #2e5077;
+    font-size: 50px; /* Icone grandi  */
+}
+
+.feature-item h3 {
+    font-size: 20px;
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.feature-item p {
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.4;
+    max-width: 200px; /* Per forzare a capo */
+}
+
+#top-companies-container {/* contanier contenente le aziende*/
+
+    grid-template-columns: 1fr;
+
+
+    max-width: 800px;
+
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+    /* parte dedicata alle più recenti recensioni*/
+    /* Griglia per le recensioni: ne mette 3 per riga */
+    .latest-reviews {
+        margin-top: 60px;
+    }
+
+    .latest-reviews .section-header {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .latest-reviews h2 {
+        font-size: 28px;
+        color: #1e293b;
+    }
+
+    .latest-reviews .section-subtitle {
+        color: #64748b;
+        font-size: 16px;
+    }
+
+    /* Griglia recensioni */
+    .reviews-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    /* Card della recensione */
+    .review-card {
+        background: white;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        transition: transform 0.2s;
+    }
+
+    .review-card:hover {
+        transform: translateY(-5px);
+    }
+
+    /* Header card */
+    .review-header {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 10px;
+    }
+
+    .company-icon {
+        width: 40px;
+        height: 40px;
+        background-color: #f0f4f8;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #2e5077;
+    }
+
+    /* Rating stelle */
+    .review-rating {
+        color: #ffc107;
+        margin-bottom: 10px;
+    }
+
+    /* Testo recensione */
+    .review-text {
+        font-size: 14px;
+        color: #555;
+        line-height: 1.5;
+    }
+

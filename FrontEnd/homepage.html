@@ -1,0 +1,119 @@
+<!-- /* Studente: Enrico Brasiello
+Matricola: 0124002755
+Componenti gruppo: 1
+Nome progetto: JobAdvisor
+* Esame: Tecnologie Web a.a 2024/2025
+* Data appello: 02/12/2025
+* */
+-->
+
+<!-- pagina principale del sito-->
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobAdvisor - Find Jobs</title>
+    <link rel="stylesheet" href="homepage_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- font da cloudfare.com per avere il miglior font possibile -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="main-container">
+    <header class="navbar">
+        <div class="logo">
+            <img src="img/JobAdvisor.png" class="my-logo">
+        </div>
+
+
+            <a href="login.html" class="btn-login" id="auth-btn">Login</a>
+            <a href="profile.html" class="btn-login" id="profile-btn">Profile</a>
+            <a href="add_review.html" class="btn-login" id="review-btn">Add Review</a>
+        <a href="manageCompany.html" class="btn-login" id="jobs-btn">Manage Jobs</a>
+        <a href="#"  id="manage-companu-btn"></a>
+
+
+
+
+
+    </header>
+
+    <section class="hero">
+        <h1 id = "welcome-title">Welcome to JobAdvisor</h1>
+        <p class="subtitle">Find jobs. Improve your skill.</p>
+
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="What are you looking for?" list="nomi-aziende">
+            <button type="button" id="search-button">Search</button>
+
+            <datalist id="nomi-aziende"> </datalist>
+        </div>
+    </section>
+
+
+    <!--sezione dedicata alla parte ESPLORA -->
+    <section class="explore">
+        <h2>Explore</h2>
+
+        <div class="features-grid">
+            <div class="feature-item">
+                <div class="icon-box">
+                    <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <a href="exploreJob.html">Job Listing</a>
+                <p>Browse openings and opportunities</p>
+            </div>
+
+
+            <div class="feature-item">
+                <div class="icon-box">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <a href="exploreCompany.html">Companies</a>
+                <p>Discover employers and industries</p>
+            </div>
+        </div>
+    </section>
+
+    <div class = "search-bar-wrapper">
+
+        <!-- sezione dedicata alle più recenti recensioni -->
+        <section class="latest-reviews">
+
+            <div class="section-header">
+                <h2>Last Reviews</h2>
+                <p class="section-subtitle">See what others are saying about companies</p>
+            </div>
+
+            <div id="reviews-container" class="reviews-grid">
+                <div class="loading-placeholder">
+                    <i class="fa-solid fa-spinner fa-spin"></i> Loading latest reviews...
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- sezione dedicata alle aziende quotate più positivamente -->
+<section class="top-companies" style="margin-top: 60px;">
+    <div class="section-header">
+        <h2>Top Tier Companies </h2>
+        <p class="section-subtitle" style="padding-bottom: 25px">Highest rated companies by our community</p>
+    </div>
+
+    <div id="top-companies-container" class="reviews-grid">
+        <div class="loading-placeholder">
+            <i class="fa-solid fa-spinner fa-spin"></i> Loading top companies...
+        </div>
+    </div>
+</section>
+
+
+
+
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

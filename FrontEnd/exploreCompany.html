@@ -1,0 +1,58 @@
+
+<!-- Studente: Enrico Brasiello
+Matricola: 0124002755
+Componenti gruppo: 1
+Nome progetto: JobAdvisor
+* Esame: Tecnologie Web a.a 2024/2025
+* Data appello: 02/12/2025
+* -->
+
+
+
+<!-- foglio per la gestione esplorazione di tutte le aziende presenti nel sito -->
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobAdvisor - Find Companies</title>
+    <link rel="stylesheet" href="homepage_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- font da cloudfare.com per avere il miglior font possibile -->
+    <link rel="stylesheet" href="exploreCompany.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="main-container">
+    <header class="navbar">
+        <div class="logo">
+            <a href="homepage.html" style="text-decoration: none; display:flex; align-items: center; gap:10px">
+                <img src="img/JobAdvisor.png" class="my-logo" >
+            </a>
+            </div>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="homepage.html">Home</a></li>
+            </ul>
+
+
+        </nav>
+
+
+
+    </header>
+
+<h1 style="border-bottom: 2px solid #012f43; padding-bottom: 10px;"> Company List</h1>
+    <p> Select a company to view.</p>
+
+    <div id="company-list" class="companies-grid">
+    <p>Loading Companies...</p>
+</div>
+</div>
+
+
+<script src="exploreCompany.js">
+
+</script>
+
+</body>
+</html>

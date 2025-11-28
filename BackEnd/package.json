@@ -1,0 +1,21 @@
+{
+  "name": "jobadvisor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node BackEnd/app.js",
+    "dev": "nodemon BackEnd/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.9",
+    "express": "^4.19.0",
+    "mariadb": "^3.2.0",
+    "mysql2": "^3.15.3"
+  }
+}
