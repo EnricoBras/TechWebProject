@@ -59,7 +59,13 @@ Company: create or delete Job placement, Employee verification, company profile
 4) Open a terminal in the project root folder
 5) install dependencies  '''bash npm install
 6) open BackEnd/database.js
-7) start the server using --> 'node server.js' OR 'node BackEnd/server.js'
+7) Set your password this way :  host: 'localhost',
+    user: 'main',
+    password: 'main',
+    database: 'jobreview',
+    port: 3306,
+   
+9) start the server using --> 'node server.js' OR 'node BackEnd/server.js'
 
 The result will be the following: 
 http://localhost:3000
